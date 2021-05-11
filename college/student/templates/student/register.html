@@ -1,0 +1,27 @@
+<form action="/student/register/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+full name    : <input type="text" name="username"><br>
+email       : <input type="email" name="email"><br>
+password    : <input type="password" name="password"><br>
+mobile      : <input type="number" name="mobile"><br>
+<label for="department"> department</label>
+  <select name="department" id="department">
+    <option value="CE">CE</option>
+    <option value="CSE">CSE</option>
+    <option value="ECE">ECE</option>
+    <option value="EEE">EEE</option>
+    <option value="ME">ME</option>
+  </select>
+    <br>
+<label for="gender"> gender</label>
+  <select name="gender" id="gender">
+    <option value="M">M</option>
+    <option value="F">F</option>
+    <option value="O">O</option>
+  </select>
+    <br>
+father_name : <input type="text" name="father_name"><br>
+profile_pic : <input type="file" name="profile_pic"><br>
+<input type="submit" value="Register">
+</form>
+<a href="/student/home/">Back</a>

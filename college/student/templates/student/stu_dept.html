@@ -1,0 +1,15 @@
+<h6>DEPARTMENTS</h6>
+<form action="/student/ce_stu_list/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+<label for="department"> department</label>
+  <select name="department" id="department">
+    <option value="CE">CE</option>
+    <option value="CSE">CSE</option>
+    <option value="ECE">ECE</option>
+    <option value="EEE">EEE</option>
+    <option value="ME">ME</option>
+  </select><br>
+    <input type="submit" value="Enter"><br>
+
+<a href="/student/staff_check/">Back</a><br>
+<a href="/student/staff_logout/">Logout</a>

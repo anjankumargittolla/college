@@ -1,0 +1,7 @@
+<form action="/student/staff_check/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    email :  <input type="email" name="email"><br>
+    password : <input type="password" name="password"><br>
+    <input type="submit" value="Login">
+</form>
+<a href="/student/home/">Back</a>

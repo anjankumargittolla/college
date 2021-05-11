@@ -1,0 +1,9 @@
+{% if list %}
+{% for st in list %}
+   <p> {{st.username}}   {{st.email}}</p><br>
+{% endfor %}
+{% else %}
+{% endif %}
+<br>
+<a href="/student/check/">Back</a><br>
+<a href="/student/student_logout/">Logout</a>

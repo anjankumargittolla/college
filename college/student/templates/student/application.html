@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>STUDENT APPLICATION</h3>
+<form action="/student/apply/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+student name : <input type="text" name="student_name"><br>
+student email : <input type="email" name="student_email"><br>
+ssc marks : <input type="number" name="ssc_marks"><br>
+inter marks : <input type="number" name="inter_marks"><br>
+<input type="submit" value="Apply">
+</form>
+<a href="/student/home/">Back</a>
+</body>
+</html>

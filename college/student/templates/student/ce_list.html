@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color: orange;">
+{% if ce %}
+{% for each in ce %}
+   <ol> {{each.student.username}} , {{each.student.email}} , {{each.student_app.ssc_marks}} , {{each.student_app.inter_marks}}</ol>
+{% endfor %}
+{% else %}
+{% endif %}
+<a href="/student/stu_dept/">Back</a><br>
+<a href="/student/staff_logout/">Logout</a>
+</body>
+</html>
