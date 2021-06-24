@@ -1,0 +1,34 @@
+1. Difference between list and tuple
+		list						tuple
+
+  1. Its an ordered, sequence , mutable data type	1. Its an ordered, sequence , immutable data type
+
+  2.Takes more time for excution			2.Takes less time for excution
+
+  3.Consumes more memory				3.Consumes less memory
+
+  4.Not able to use as an dictionary key		4.Able to use as an dictionary key
+
+  5.We cannot generate hash values for list		5.We can generate hash values for list
+
+
+2. Difference between mutable and immutable
+
+   For immutable data type once the data created, their memory address never changed
+
+   For mutable data type once the data created, their memory address will change once we edit the data
+   
+3. Difference between append and extend
+
+  l = [1,2,3] if we want to add [4,5,6]
+
+  diff btw append and extend
+
+  append adds the elements at the end of the list with single index o/p l = [1,2,3,[4,5,6]]
+
+  But extend will add the elements at different index for every element o/p l = [1,2,3,4,5,6]
+
+4.Difference 
+
+
+
